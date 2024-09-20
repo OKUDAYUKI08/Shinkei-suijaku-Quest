@@ -40,6 +40,7 @@
         }
         main {
             padding: 20px;
+            padding-bottom: 60px; /* フッターの高さ分の余白を追加 */
         }
         h1 {
             color: #333;
@@ -52,9 +53,11 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            width: 100%;
+            position: fixed;  /* フッターを固定 */
             bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
         }
         a {
             color: #4CAF50;
@@ -118,7 +121,6 @@
 
 <footer>
     <p>&copy; 2024 神経衰弱クエスト  </p>
-    
 </footer>
 
 </body>
